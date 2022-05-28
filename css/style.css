@@ -1,0 +1,457 @@
+@import "null.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+[class*="__container"]{
+	max-width: 1050px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.header {
+	padding: 20px 0px 0px 0px;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.header__container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 28px;
+}
+.header__top {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 40px;
+}
+.header__logo {
+}
+.header__link-logo img {
+	max-width: 174px;
+	max-height: 41px;
+}
+.header__image-logo {
+}
+.header__items {
+	display: flex;
+	column-gap: 31px;
+}
+.header__item {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 1.83;
+	letter-spacing: 0.15px;
+	color: #FFFFFF;
+	padding-left: 34px;
+}
+.item-header {
+}
+.clock {
+	background: url("../img/header_icon-1.svg") 0 0 / 24px no-repeat;
+}
+.item-header__title {
+}
+.item-header__info {
+}
+.phone-number {
+	background: url("../img/header_icon-2.svg") 0 0 / 24px no-repeat;
+
+}
+.header__button-appointment {
+	max-width: 230px;
+}
+.button {
+	align-self: flex-start;
+	display: inline-flex;
+	background-color: #F2726F;
+	border-radius: 8px;
+	text-align: center;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #fff;
+	font-weight: 700;
+	line-height: 2;
+	padding: 12px 33px;
+	transition: all 0.3s ease 0s;
+}
+.button:hover {
+	background-color: #fff;
+	color: #F2726F;
+	outline: 2px solid #F2726F;
+} 
+.header__nav {
+	background-color: #fff;
+	border-radius: 10px;
+	display: flex;
+	padding: 10px 48px 10px 40px;
+	justify-content: space-between;
+	min-height: 60px;
+	align-items: center;
+	column-gap: 50px;
+}
+.nav-header {
+}
+.nav-header__menu {
+}
+.menu {
+}
+.menu__items {
+	display: flex;
+	column-gap: 37px;
+	flex-wrap: wrap;
+}
+
+.menu__link {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.57;
+	letter-spacing: 0.15px;
+	color: #000000;
+}
+.menu__link:hover {
+	text-decoration: underline;
+}
+.nav-header__icons {
+	display: flex;
+	column-gap: 22px;
+}
+.nav-header__icon {
+}
+.nav-header__img-icon {
+}
+
+.main {
+	flex-grow: 1;
+}
+.appointment {
+	padding: 280px 0px 312px 0px;
+	background: url("../img/header_background.jpg") center / cover no-repeat;
+}
+.appointment__container {
+}
+.appointment__title {
+	font-weight: 900;
+	font-size: 56px;
+	line-height: 1;
+	color: #FFFFFF;
+	max-width: 583px;
+}
+.appointment__title:not(:last-child) {
+	margin: 0px 0px 48px 0px;
+}
+.appointment__button {
+	box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+}
+.who-we-are {
+}
+.who-we-are__container {
+	background: #5D62B5;
+	border-radius: 40px;
+	color: #FFFFFF;
+	margin-top: -86px;
+	margin-bottom: 120px;
+	position: relative;
+	padding: 100px 87px 0px 87px;
+}
+.who-we-are__container::after {
+	content: "";
+	position: absolute;
+	background: url("../img/who-we-are_decor.svg") 0 0 / 100% no-repeat ;
+	top: 0;
+	right: 0;
+	height: 317px;
+	width: 19.7%;
+	margin: -10.85% -7.5% 0 0;
+	z-index: 1;
+}
+.who-we-are__subtitle {
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	padding: 0px 0px 0px 33px;
+	color: #F5F5F5;
+	z-index: 2;
+	background: url("../img/who-we-are_icon.svg") 0 3px / 17px no-repeat;
+}
+.who-we-are__subtitle:not(:last-child) {
+	margin: 0px 0px 33px 0px;
+}
+.who-we-are__title {
+	max-width: 583px;
+	font-weight: 900;
+	font-size: 36px;
+	color: #FFFFFF;
+	line-height: 1.17;
+	position: relative;
+	z-index: 2;
+}
+.who-we-are__title:not(:last-child) {
+	margin: 0px 0px 36px 0px;
+}
+.who-we-are__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+	color: #F5F5F5;
+	z-index: 2;
+
+}
+.who-we-are__text:not(:last-child) {
+	margin: 0px 0px 54px 0px;
+}
+.who-we-are__image {
+}
+.who-we-are__img {
+	border-radius: 40px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px, rgba(0, 0, 0, 0.2) 0px 16px 24px;
+	margin-bottom: -120px;
+	width: 100%;
+}
+.pup {
+	background: #29C3BE;
+	position: relative;
+	color: #FFFFFF;
+}
+.pup::before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0px;
+	width: 30%;
+	height: 235px;
+	background: url("../img/Blob_3.svg") 0 0 / 100% no-repeat;
+	z-index: 2;
+}
+.pup::after {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 122px;
+	left: 0;
+	width: 20%;
+	height: 317px;
+	background: url("../img/decor.svg") 0 0 / 100% no-repeat;
+	z-index: 1;
+}
+.pup__container {
+}
+.pup__body {
+	display: flex;
+	position: relative;
+	margin: 0px -36px;
+}
+.pup__body::after {
+	content: "";
+	position: absolute;
+	background: url("../img/Line.svg") 0 0 no-repeat;
+	width: 52%;
+	height: 387px;
+	top: 0px;
+	transform: translate(93%, 0px);
+}
+.pup__image {
+	position: relative;
+	z-index: 5;
+	padding: 75px 36px 0 36px;
+	margin: 0px 0px 0px -254px;
+	flex: 1 1 50%;
+}
+.pup__img {
+	width: 100%;
+}
+.pup__content {
+	flex: 0 1 50%;
+	padding: 112px 36px 169px 36px;
+	position: relative;
+	z-index: 6;
+	max-width: 411px;
+}
+.pup__text {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 1.17;
+	min-width: 250px;
+	position: relative;
+	z-index: 6;
+}
+.pup__text:not(:last-child) {
+	margin: 0px 0px 42px 0px;
+}
+.pup__text::before {
+	content: "";
+	position: absolute;
+	background: url("../img/tennis_ball.svg") 0 0 no-repeat;
+	width: 136px;
+	height: 136px;
+	top: -5px;
+	right: -120px;
+	z-index: 1;
+}
+.footer {
+	background-color: rgb(217, 233, 243);
+	padding: 10px 30px;
+	color: #fff;
+	font-size: 18px;
+}
+@media (max-width: 830px) {
+	.header__button-appointment {
+		display: none;
+	}
+	.who-we-are__container {
+		padding: 50px 37px 0px 37px;
+		margin-bottom: 60px;
+	}
+	.who-we-are__img {
+		margin-bottom: -60px;
+	}
+}
+@media (max-width: 723px) {
+	.header__nav {
+		padding: 5px 23px 5px 20px;
+		min-height: 50px;
+	}
+	.menu__items {
+		column-gap: 20px;
+	}
+	.menu__link {
+		font-size: 12px;
+	}
+	.appointment {
+		padding: 200px 0px 220px 0px;
+	}
+	.appointment__title {
+		font-size: 46px;
+	}
+}
+@media (max-width: 577px) {
+	.header__nav {
+		justify-content: flex-end;
+		position: relative; 
+	}
+	.header__nav::before {
+		content: "";
+		background: url("../img/pngwing.png") 0 0 / 100% no-repeat;
+		width: 25px;
+		height: 25px;
+		top: 12px;
+		left: 15px;
+		position: absolute;
+	}
+	.nav-header__menu {
+		display: none;
+	}
+	.header__top {
+		flex-direction: column;
+		row-gap: 25px;
+	}
+	.item-header {
+		margin: 0 15px;
+	}
+	.appointment__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.appointment__button {
+		align-self: center;
+	}
+	.appointment {
+		padding: 230px 0px 150px 0px;
+	}
+	.appointment__title:not(:last-child) {
+		margin: 0px 0px 30px 0px;
+	}
+	.who-we-are__container {
+		padding: 30px 15px 0px 15px;
+		margin-bottom: 40px;
+	}
+	.who-we-are__img {
+		margin-bottom: -40px;
+	}
+	.who-we-are__subtitle:not(:last-child) {
+		margin: 0px 0px 10px 0px;
+	}
+	.who-we-are__title {
+		font-size: 30px;
+	}
+	.who-we-are__title:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+	.who-we-are__text:not(:last-child) {
+		margin: 0px 0px 25px 0px;
+	}
+	.pup__content {
+		padding: 50px 30px;
+		max-width: 400px;
+	}
+	.pup__text {
+		font-size: 30px;
+	}
+	.pup__text:not(:last-child) {
+		margin: 0px 0px 30px 0px;
+	}
+	.pup__container {
+		background-color: rgba(0, 0, 0, 0.192);
+	}
+}
+@media (max-width: 449px) {
+	.header__items {
+		flex-direction: column;
+		row-gap: 10px;
+	}
+	.appointment {
+		padding: 290px 0px 150px 0px;
+	}
+}
+@media (max-width: 354px) {
+
+	.appointment {
+		padding: 275px 0px 150px 0px;
+	}
+	.appointment__title {
+		font-size: 26px;
+	}
+	.header__nav::before {
+		content: "";
+		background: url("../img/pngwing.png") 0 0 / 100% no-repeat;
+		width: 18px;
+		height: 18px;
+		top: 12px;
+		left: 15px;
+		position: absolute;
+	}
+	.header__nav {
+		padding: 5px 18px 5px 18px;
+		min-height: 40px;
+	}
+	.header__top {
+		row-gap: 15px;
+	}
+
+	.who-we-are__container {
+		margin-bottom: 30px;
+	}
+	.who-we-are__img {
+		margin-bottom: -30px;
+	}
+	.who-we-are__title {
+		font-size: 26px;
+	}
+	.who-we-are__text {
+		font-size: 14px;
+	}
+}
